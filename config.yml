@@ -1,0 +1,16 @@
+title: 'codeql https://www.facebook.com/laura.miley...codeql'
+description: 'codeql https://www.facebook.com/laura.miley...codeql'
+template:
+  repo: 'codeql-https:www.facebook.comlaura.miley...codeql-template'
+  name: 'codeql-https:www.facebook.comlaura.miley...codeql'
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
